@@ -1,0 +1,31 @@
+# Week 5 - Neural Networks for Vision Tasks
+
+## Dataset Setup
+
+Download CIFAR-10 (Python version) from https://www.cs.toronto.edu/~kriz/cifar.html and place it as:
+
+```
+data/
+  cifar-10-batches-py/
+    batches_meta
+    data_batch_1
+    data_batch_2
+    data_batch_3
+    data_batch_4
+    data_batch_5
+```
+
+## How to Run
+
+1. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Run each script**
+   ```bash
+   python image_captioning.py       # RNN captioning       → captioned_image.png
+   python attention_captioning.py   # Attention captioning → attention_captioned_image.png
+   python image_gradients.py        # Saliency + confusion → saliency_map.png, confusion_matrix.png
+   python style_transfer.py         # Style transfer       → style_transfer_result.png
+   ```
